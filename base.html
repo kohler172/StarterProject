@@ -2,21 +2,23 @@
 <!DOCTYPE html>
 <head>
   <title> Find Out About Yourself </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="APIstuff.js"></script>
 </head>
 <body>
-<button onclick="callWs()">
-<script src="APIstuff.js"></script>
-Who Are You?
-</button>
+  <h1> WHO ARE YOU </h1>
 <form>
   <label>Name:</label>
   <input id="nameInput" type="text">
 </form>
+<button onclick="callWs()">
+Who Are You?
+</button>
 <br/>
 <div id="result">
 </div>
 <br/>
-<b>Your predicted age :</b>
+<b>Your predicted age: </b>
 <div id="result_json">
 </div>
 <b> Your country of origin: </b>
