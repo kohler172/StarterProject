@@ -46,6 +46,9 @@ callWs = function(e){
   .then(function(json) {
     // Render the parsed body
     document.getElementById('kanye').innerHTML = json.quote
+      var msg = new SpeechSynthesisUtterance();
+      msg.text = json.quote
+      window.speechSynthesis.speak(msg);
   })
   
 }
